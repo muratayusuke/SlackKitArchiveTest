@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4539A006A276A97D3C8E049C /* Pods_SlackKitArchiveTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DCA1B00E1C00F08FFE90CB /* Pods_SlackKitArchiveTest.framework */; };
 		48886F611C8DDF2500A6143F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48886F601C8DDF2500A6143F /* AppDelegate.swift */; };
 		48886F631C8DDF2500A6143F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48886F621C8DDF2500A6143F /* ViewController.swift */; };
 		48886F661C8DDF2500A6143F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48886F641C8DDF2500A6143F /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F7EE9D03B263F6CEA6DC17B /* Pods-SlackKitArchiveTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackKitArchiveTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlackKitArchiveTest/Pods-SlackKitArchiveTest.debug.xcconfig"; sourceTree = "<group>"; };
 		48886F5D1C8DDF2500A6143F /* SlackKitArchiveTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackKitArchiveTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48886F601C8DDF2500A6143F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48886F621C8DDF2500A6143F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		48886F671C8DDF2500A6143F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48886F6A1C8DDF2500A6143F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48886F6C1C8DDF2500A6143F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81DCA1B00E1C00F08FFE90CB /* Pods_SlackKitArchiveTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackKitArchiveTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		873B8F51C69E848AFED9743B /* Pods-SlackKitArchiveTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackKitArchiveTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackKitArchiveTest/Pods-SlackKitArchiveTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4539A006A276A97D3C8E049C /* Pods_SlackKitArchiveTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1755D192125507092C81CF68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81DCA1B00E1C00F08FFE90CB /* Pods_SlackKitArchiveTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		48886F541C8DDF2500A6143F = {
 			isa = PBXGroup;
 			children = (
 				48886F5F1C8DDF2500A6143F /* SlackKitArchiveTest */,
 				48886F5E1C8DDF2500A6143F /* Products */,
+				D4BB63B82634C0D9FC003017 /* Pods */,
+				1755D192125507092C81CF68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = SlackKitArchiveTest;
 			sourceTree = "<group>";
 		};
+		D4BB63B82634C0D9FC003017 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F7EE9D03B263F6CEA6DC17B /* Pods-SlackKitArchiveTest.debug.xcconfig */,
+				873B8F51C69E848AFED9743B /* Pods-SlackKitArchiveTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48886F6F1C8DDF2500A6143F /* Build configuration list for PBXNativeTarget "SlackKitArchiveTest" */;
 			buildPhases = (
+				D27DF0872D14204BE94CC6F2 /* Check Pods Manifest.lock */,
 				48886F591C8DDF2500A6143F /* Sources */,
 				48886F5A1C8DDF2500A6143F /* Frameworks */,
 				48886F5B1C8DDF2500A6143F /* Resources */,
+				8DC50A24F3A3819B20087F4F /* Embed Pods Frameworks */,
+				31B87874FF26EBF9DA2BAF54 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31B87874FF26EBF9DA2BAF54 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackKitArchiveTest/Pods-SlackKitArchiveTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DC50A24F3A3819B20087F4F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackKitArchiveTest/Pods-SlackKitArchiveTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D27DF0872D14204BE94CC6F2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		48886F591C8DDF2500A6143F /* Sources */ = {
@@ -247,6 +322,7 @@
 		};
 		48886F701C8DDF2500A6143F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F7EE9D03B263F6CEA6DC17B /* Pods-SlackKitArchiveTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SlackKitArchiveTest/Info.plist;
@@ -258,6 +334,7 @@
 		};
 		48886F711C8DDF2500A6143F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 873B8F51C69E848AFED9743B /* Pods-SlackKitArchiveTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SlackKitArchiveTest/Info.plist;
@@ -286,6 +363,7 @@
 				48886F711C8DDF2500A6143F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

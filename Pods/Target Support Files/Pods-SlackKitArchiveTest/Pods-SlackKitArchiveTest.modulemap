@@ -1,0 +1,6 @@
+framework module Pods_SlackKitArchiveTest {
+  umbrella header "Pods-SlackKitArchiveTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
